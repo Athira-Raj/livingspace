@@ -2703,53 +2703,74 @@ video {
 
 /* --------------5 team ------------------- */
 .team-section {
-  padding: 40px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  padding: 50px 20px;
 }
 
 .team-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  
+  
 }
 
 .team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .team-member {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 250px;
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .team-member img {
-  width: 100%;
-  height: 250px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 3px solid #eee;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+
 }
 
 .team-member h3 {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: #444;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
 }
 
-@media (max-width: 600px) {
-  .team-member {
-    width: 100%;
+.team-member span {
+  font-size: 13px;
+  color: gray;
+}
+
+.highlight {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -2915,4 +2936,22 @@ button {
 
 button:hover {
   background-color: #059652;
+}
+.stat-number {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.stat-number .purecounter {
+  font-weight: bold;
+}
+
+.stat-number .plus {
+  font-size: 1rem;
+  margin-left: 2px;
+  line-height: 1;
+  display: inline-block;
+  color: inherit;
 }
